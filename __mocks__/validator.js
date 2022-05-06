@@ -1,5 +1,5 @@
 module.exports = {
-  isEmailInvalid: true,
+  isEmailInvalid: false,
 
   isEmail (email) {
     return this.isEmailInvalid

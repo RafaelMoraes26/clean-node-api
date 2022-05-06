@@ -14,13 +14,13 @@ describe('Email Validator', () => {
   test('Should return true if validator returns true', () => {
     const sut = makeSut()
     const isEmailInvalid = sut.isInvalid('valid_email@email.com')
-    expect(isEmailInvalid).toBe(true)
+    expect(isEmailInvalid).toBe(false)
   })
 
   test('Should return false if validator returns false', () => {
-    validator.isEmailInvalid = false
+    validator.isEmailInvalid = true
     const sut = makeSut()
     const isEmailInvalid = sut.isInvalid('invalid_email@email.com')
-    expect(isEmailInvalid).toBe(false)
+    expect(isEmailInvalid).toBe(true)
   })
 })
