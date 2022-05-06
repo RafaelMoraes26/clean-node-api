@@ -18,7 +18,9 @@
     ]
   },
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "husky": {
     "hooks": {
@@ -33,5 +35,8 @@
     "jest": "^28.0.3",
     "lint-staged": "^12.4.1",
     "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "validator": "^13.7.0"
   }
 }
